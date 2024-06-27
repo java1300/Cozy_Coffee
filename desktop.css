@@ -1,0 +1,126 @@
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #333; /* Link color */
+    padding-bottom: 5px; /* Space for underline */
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Underline thickness */
+    background-color: #00abf0; /* Underline color */
+    transition: width 0.5s ease; /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after {
+    width: calc(100% - 5px); /* Full width minus padding on both sides */
+}
+
+
+
+.navbar-nav .nav-link {
+    color: black !important;
+    font-size: 15px !important;
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link:hover{
+    opacity: 50%;
+    transition: .3s;
+}
+
+.logo{
+    color: #ffaeb1;
+    font-weight: 600;
+
+}
+
+.logo2{
+    color: #000342;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#main-section{
+    background-image: url("img/coffee-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: block;
+    background-position: center;
+}
+
+#main-section p{
+    width: 50%;
+    color: #ebeded;
+    font-weight: 25;
+}
+
+.title{
+    color: #ffaeb1;
+}
+
+#main-section h1{
+    margin-bottom: 1.5em;
+    color: #ebeded;
+    font-weight: 700;
+}
+
+.carousel-container {
+    max-width: 600px; /* Adjust the width as needed */
+    /* Center the carousel */
+    margin: 0 auto 2em;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+#contact .card{
+    border: none;
+}
+
+#contact h3{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #76697E;
+}
+
+#contact ul{
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+#contact ul li{
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+#contact .informations{
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 5em;
+    font-weight: 200;
+    background-color: #0f0e12;
+    height:7vh;
+    color: #ebeded;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+}
+#menu .card p{
+    font-size: 0.8em;
+}
